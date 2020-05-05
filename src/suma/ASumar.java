@@ -14,6 +14,7 @@ public class ASumar {
 	 * @param cad
 	 * @return numero
 	 */
+	
 	public String mostrar(String cad) {
         String numero = cad;
         if (numero.length() == 1) {
