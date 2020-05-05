@@ -22,4 +22,20 @@ public class ASumar {
 		return numero; 
 
 	}
+	
+	/**
+	 * Este metodo comprueba si el numero introducido es negativo 
+	 * y devuelve una cadena vacia
+	 * @author Adrian Perez
+	 * @param cad
+	 * @return numero
+	 */
+	public String mostrarNeg(String cad) {
+        String numero = cad;
+        if (Integer.parseInt(numero) < 0) {
+            return ("");
+        }
+		return numero; 
+
+	}
 }
