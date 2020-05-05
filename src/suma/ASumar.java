@@ -2,6 +2,9 @@ package suma;
 
 public class ASumar {
 
+	/**
+	 * @author Adrian Perez
+	 */
 
 	public ASumar() {
 		
@@ -10,7 +13,6 @@ public class ASumar {
 	/**
 	 * Este metodo comprueba si el numero introducido es de un digito 
 	 * y devuelve una cadena
-	 * @author Adrian Perez
 	 * @param cad
 	 * @return numero
 	 */
@@ -27,7 +29,6 @@ public class ASumar {
 	/**
 	 * Este metodo comprueba si el numero introducido es negativo 
 	 * y devuelve una cadena vacia
-	 * @author Adrian Perez
 	 * @param cad
 	 * @return numero
 	 */
@@ -39,4 +40,22 @@ public class ASumar {
 		return numero; 
 
 	}
+	
+	/**
+	 * Este metodo realiza la suma de los digitos de un string
+	 * @param cad
+	 * @return suma
+	 */
+	public int total(String valor_inicial) {
+        int suma = 0;
+        int b = 1;
+		for (int i = 0; i < valor_inicial.length(); i++) {
+            // Cadena de un dígito.
+            String digito = valor_inicial.substring(i, b);
+            b++;
+            suma = suma + Integer.parseInt(digito);
+        }
+        return suma;
+
+    }
 }

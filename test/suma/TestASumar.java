@@ -19,5 +19,13 @@ class TestASumar {
         String resultado = sumi.mostrarNeg("-5");
         assertEquals("",resultado );
     }
-
+	
+	
+	@Test
+    public void testMasCifras() {
+        ASumar sumi = new ASumar();
+        int resultado = sumi.total("21");
+        assertEquals(3,resultado );
+    }
+	
 }
